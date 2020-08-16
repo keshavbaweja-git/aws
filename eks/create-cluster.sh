@@ -1,0 +1,12 @@
+eksctl create cluster \
+--name prod \
+--version 1.17 \
+--region ap-southeast-1 \
+--nodegroup-name linux-nodes \
+--node-type t3.small \
+--nodes 2 \
+--nodes-min 1 \
+--nodes-max 2 \
+--ssh-access \
+--ssh-public-key ../ssh/key_pair_2.pub \
+--managed
